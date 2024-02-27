@@ -47,6 +47,7 @@ a {
   text-decoration: none;
   color: var(--fontColor);
   font-family: var(--link-font);
+  font-weight: bold;
 }
 
 .avatar-section {
@@ -71,7 +72,7 @@ h1 {
   background-color: var(--fontColor);
 }
 
-#Articles{
+#Articles {
   padding: 0 100px;
 }
 h2 {
@@ -82,44 +83,41 @@ h2 {
   font-weight: bold;
 }
 
-h3{
+h3 {
   font-family: var(--heading-font);
 }
 
-p{
+p {
   font-family: var(--link-font);
 }
 
-.articles-container{
+.articles-container {
   display: flex;
   justify-content: center;
   gap: 30px;
- 
 }
 
-article{
-  display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: var(--bg-color);
-border-radius: 5px;
-
-}
-
-
-.text-container{
+article {
   display: flex;
   flex-direction: column;
- padding-bottom: 16px;
- justify-content: center;
-align-items: center;
-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  border-radius: 5px;
 }
 
-button{
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
   background-color: var(--main-color);
-  padding:8px ;
+  padding: 8px;
   width: 100px;
   border-radius: 16px;
   border: 1px solid var(--main-color);
@@ -128,46 +126,54 @@ button{
   color: var(--fontColor);
   font-weight: bold;
 }
-article div{
+article div {
   display: flex;
   justify-content: center;
-  
 }
 
-article div img{
-object-fit: contain;
-width: 305px;
-height: 305px;
- 
+article div img {
+  object-fit: contain;
+  width: 305px;
+  height: 305px;
 }
 
-
-#About{
- padding: 5% 30% 5%;
-text-align: left;
+#About {
+  padding: 5% 30% 5%;
+  text-align: left;
 }
 
+span {
+  color: var(--main-color);
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 16px;
+  font-family: var(--link-font);
+}
 
 @media only screen and (max-width: 900px) {
   nav {
     flex-direction: column;
   }
 
-  .avatar{
+  .avatar {
     width: 150px;
   }
 
-  .avatar-section{
+  .avatar-section {
     flex-direction: column-reverse;
-  
   }
 
-  .articles-container{
+  .articles-container {
     flex-direction: column;
   }
 
-  article div img{
+  article div img {
     max-width: 100%;
     height: auto;
   }
