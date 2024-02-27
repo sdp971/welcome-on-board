@@ -71,10 +71,82 @@ h1 {
   background-color: var(--fontColor);
 }
 
+#Articles{
+  padding: 0 100px;
+}
 h2 {
   color: var(--main-color);
   text-align: center;
+  font-family: var(--heading-font);
+  padding: 32px;
+  font-weight: bold;
 }
+
+h3{
+  font-family: var(--heading-font);
+}
+
+p{
+  font-family: var(--link-font);
+}
+
+.articles-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ 
+}
+
+article{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: var(--bg-color);
+border-radius: 5px;
+
+}
+
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+ padding-bottom: 16px;
+ justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+button{
+  background-color: var(--main-color);
+  padding:8px ;
+  width: 100px;
+  border-radius: 16px;
+  border: 1px solid var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--fontColor);
+  font-weight: bold;
+}
+article div{
+  display: flex;
+  justify-content: center;
+  
+}
+
+article div img{
+object-fit: contain;
+width: 305px;
+height: 305px;
+ 
+}
+
+
+#About{
+ padding: 5% 30% 5%;
+text-align: left;
+}
+
 
 
 @media only screen and (max-width: 900px) {
@@ -89,5 +161,14 @@ h2 {
   .avatar-section{
     flex-direction: column-reverse;
   
+  }
+
+  .articles-container{
+    flex-direction: column;
+  }
+
+  article div img{
+    max-width: 100%;
+    height: auto;
   }
 }
