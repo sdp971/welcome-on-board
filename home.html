@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome on board</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo-container">
-          <img
-            src="./images/logo.svg"
-            alt="logo du site"
-            class="logo"
-          />
+          <img src="./images/logo.svg" alt="logo du site" class="logo" />
         </div>
 
         <ul>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#Articles">Articles</a></li>
+          <li><a href="#About">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -40,14 +36,74 @@
     <div class="avatar-section">
       <h1>Welcome<br />on board !</h1>
       <div>
-        <img
-          src="./images/avatar.png"
-          alt="image de profil"
-          class="avatar"
-        />
+        <img src="./images/avatar.png" alt="image de profil" class="avatar" />
       </div>
     </div>
 
+    <main>
+      <section id="Articles">
+        <h2>Recent articles</h2>
 
+        <div class="articles-container">
+          <article>
+            <div>
+              <img src="./images/responsive.png" alt="" />
+            </div>
+            <div class="text-container">
+              <h3>Responsive</h3>
+              <button>Read</button>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <img src="./images/scalable.png" alt="" />
+            </div>
+            <div class="text-container">
+              <h3>Scalable</h3>
+              <button>Read</button>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <img src="./images/inclusive.png" alt="" />
+            </div>
+
+            <div class="text-container">
+              <h3>Inclusive</h3>
+              <button>Read</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="About">
+        <h2>About</h2>
+        <p>
+          Ut at imperdiet odio, elementum ornare ex. Nam non faucibus orci.
+          Vestibulum laoreet tincidunt faucibus. Aenean eu velit mauris. Donec
+          aliquam magna nec urna ultrices tempus. Curabitur rhoncus lectus ac
+          enim rhoncus, non scelerisque sem tristique. Pellentesque eu erat ac
+          purus accumsan porta. Pellentesque eu aliquet velit, at bibendum nibh.
+          Integer consectetur vestibulum pulvinar. Morbi sollicitudin elementum
+          eros. Curabitur ullamcorper, erat et dignissim ornare, libero justo
+          tincidunt justo, eget sollicitudin odio erat id justo. Nam malesuada
+          convallis mi non convallis.
+          <br />
+          <br />
+          Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per
+          conubia nostra, per inceptos himenaeos. Aliquam auctor diam id neque
+          mollis, sit amet dignissim odio scelerisque. Cras in commodo diam.
+          Vivamus eu imperdiet sapien. Nam volutpat pulvinar maximus. Fusce sit
+          amet sodales sapien, et eleifend dolor. Praesent massa ex, elementum
+          quis gravida sit amet, dictum varius eros. Vivamus non enim vitae nisl
+          pulvinar accumsan. Pellentesque dapibus ante quis laoreet molestie.
+          Maecenas laoreet euismod leo id aliquet. Maecenas id pellentesque
+          risus. Morbi euismod vulputate neque, vel sollicitudin felis
+          condimentum eget.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
